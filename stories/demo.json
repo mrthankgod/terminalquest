@@ -1,0 +1,38 @@
+{
+  "title": "The Lost Key",
+  "intro": "You wake up in a dim stone room with no memory of how you got here.",
+  "start": "room",
+  "startingInventory": [],
+  "scenes": {
+    "room": {
+      "text": "A cold stone room. There's a wooden door to the north and a small chest in the corner.",
+      "choices": [
+        { "label": "Open the chest", "goto": "chest" },
+        { "label": "Try the door", "goto": "door_locked" }
+      ]
+    },
+    "chest": {
+      "text": "Inside the chest you find a rusty key.",
+      "give": ["rusty key"],
+      "choices": [
+        { "label": "Try the door now", "goto": "door_unlock" }
+      ]
+    },
+    "door_locked": {
+      "text": "The door is locked tight. You'll need a key.",
+      "choices": [
+        { "label": "Go back and look around", "goto": "room" }
+      ]
+    },
+    "door_unlock": {
+      "text": "The rusty key turns with a satisfying click. The door creaks open onto a sunlit hallway.",
+      "choices": [
+        { "label": "Step through", "goto": "hallway" }
+      ]
+    },
+    "hallway": {
+      "text": "Freedom! Sunlight streams in. You made it out of the stone room.",
+      "choices": []
+    }
+  }
+}

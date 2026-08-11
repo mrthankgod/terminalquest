@@ -1,0 +1,25 @@
+{
+  "name": "terminalquest",
+  "version": "1.0.0",
+  "description": "A text adventure game engine that runs in the terminal",
+  "main": "src/terminalquest.js",
+  "bin": {
+    "terminalquest": "src/terminalquest.js"
+  },
+  "scripts": {
+    "start": "node src/terminalquest.js play stories/demo.json",
+    "test": "node test/test.js",
+    "tracker": "node src/achievement-tracker.js",
+    "roadmap": "node src/achievement-tracker.js roadmap"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "cli",
+    "ai",
+    "developer-tools",
+    "terminalquest"
+  ]
+}
